@@ -3,9 +3,12 @@ import pandas as pd
 import random
 from string import ascii_uppercase
 
+st.set_page_config(
+    page_title= "의료 빅테이터 분석",
+    layout="wide",
+)
 
 alphabet_list = list(ascii_uppercase)
-
 
 def convert_df(df):
     return df.to_csv().encode('cp949')
